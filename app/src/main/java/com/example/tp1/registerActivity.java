@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class registerActivity extends AppCompatActivity {
 
     EditText username, psw;
     Button loginButton;
+
+    DBHelper Tp1bd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +25,7 @@ public class registerActivity extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.inputUsernameL);
         psw = (EditText) findViewById(R.id.inputPswL);
-
+        Tp1bd = new DBHelper(this);
         connecterUser();
     }
 
@@ -31,7 +34,23 @@ public class registerActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+             String user = username.getText().toString();
+             String userPsw = psw.getText().toString();
 
+             if(user.equals("") || userPsw.equals("")){
+                 Toast.makeText(registerActivity.this,"un ou plusieurs champs sont vides. Veuillez les remplir", Toast.LENGTH_SHORT).show();
+             }
+             else {
+                 Boolean checkuserpass = Tp1bd.validationUserPsw(user,userPsw);
+                 if(checkuserpass == true){
+                     Toast.makeText(registerActivity.this,"connexion reussi",Toast.LENGTH_SHORT).show();
+                     Intent intent = new Intent(getApplicationContext(),HomePage.class);
+                     startActivity(intent);
+                 }
+                 else{
+                     Toast.makeText(registerActivity.this,"mot de passe invalide",Toast.LENGTH_SHORT).show();
+                 }
+             }
             }
         });
     }

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    tools:context=".loginActivity">
 
     <TextView
         android:id="@+id/logo"
@@ -17,13 +17,13 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintVertical_bias="0.002" />
 
     <EditText
-        android:id="@+id/usernameInput"
+        android:id="@+id/inputPswL"
         android:layout_width="470dp"
         android:layout_height="51dp"
         android:layout_marginStart="40dp"
@@ -42,13 +42,13 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/inputEmail"
+        android:id="@+id/inputUsernameL"
         android:layout_width="463dp"
         android:layout_height="49dp"
         android:layout_marginStart="40dp"
@@ -68,15 +68,15 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/inputPswL"
         app:layout_constraintVertical_bias="0.004" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/inputPsw"
         android:layout_width="462dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="40dp"
@@ -94,13 +94,13 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputUsernameL"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/inputConfirmPassword"
+        android:id="@+id/inputConfPsw"
         android:layout_width="459dp"
         android:layout_height="49dp"
         android:layout_marginStart="40dp"
@@ -120,25 +120,25 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/inputPsw"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="207dp"
-        android:layout_height="43dp"
+        android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_bigger"
         android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.19999999" />
 
     <TextView
         android:id="@+id/userAlreadyexist"

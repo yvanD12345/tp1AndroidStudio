@@ -18,15 +18,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.01999998" />
 
     <EditText
         android:id="@+id/inputPswL"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="388dp"
+        android:layout_height="44dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/input_bigger"
@@ -43,23 +43,23 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputUsernameL"
-        app:layout_constraintVertical_bias="0.06999999" />
+        app:layout_constraintVertical_bias="0.122" />
 
     <EditText
         android:id="@+id/inputUsernameL"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="386dp"
+        android:layout_height="46dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/input_bigger"
-        android:drawableLeft="@drawable/ic_person"
+        android:drawableLeft="@drawable/ic_email"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="username"
+        android:hint="email"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
@@ -69,16 +69,16 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/passwordForgot"
         android:layout_width="161dp"
         android:layout_height="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:text="forgot Password ?"
         android:textColor="@color/colorBlack"
         android:textSize="16sp"
@@ -99,7 +99,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="14dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:textAlignment="center"

@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class loginActivity extends AppCompatActivity {
     EditText username, psw, confPsw;
+
     Button registerButton;
 
     DBHelper Tp1bd;
@@ -26,9 +27,13 @@ public class loginActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.inputPswL);
         psw = (EditText) findViewById(R.id.inputPsw);
         confPsw = (EditText) findViewById(R.id.inputConfPsw);
+
+
         InscrireUser();
 
     }
+
+
 
     protected void InscrireUser() {
         registerButton = (Button)  findViewById(R.id.buttonRegister);

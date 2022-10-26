@@ -48,6 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/pageTitle"
         app:layout_constraintVertical_bias="0.075" />
 
+
     <ImageView
         android:id="@+id/logoApp"
         android:layout_width="60dp"
@@ -98,8 +99,8 @@
 
     <ImageView
         android:id="@+id/suppOffre"
-        android:layout_width="58dp"
-        android:layout_height="56dp"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"

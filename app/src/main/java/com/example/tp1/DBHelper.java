@@ -20,11 +20,14 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase Tp1bd) {
         Tp1bd.execSQL("create Table users(username TEXT primary key, psw TEXT)");
+        //Tp1bd.execSQL("CREATE TABLE IF NOT EXISTS offreEmploi(companyText TEXT primary key,Contact TEXT,Telephone NUMERIC,Courriel VARCHAR(255),ville TEXT,codePostal TEXT)");
+        Tp1bd.execSQL("create Table offerTest(nomCompany Text primary key, email TEXT,contact TEXT)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase Tp1bd, int oldVersion, int newVersion) {
         Tp1bd.execSQL("drop table if exists users");
+        Tp1bd.execSQL("drop table if exists offerTest");
     }
     //permet d'inserer les donné que le user à entrer dans la bd et retourne un boolean si oui ou non l'insertion à pu se faire
     public Boolean insertionDansLaBd(String username, String psw){
@@ -40,6 +43,24 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         else return true;
 
+    }
+    public boolean insertoffer(String nomCompany , String email, String contact){
+        SQLiteDatabase Tp1bd = this.getWritableDatabase();
+        ContentValues offer = new ContentValues();
+        offer.put("nomCompany", nomCompany);
+        offer.put("email",email);
+        offer.put("contact",contact);
+        long resultat = Tp1bd.insert("offerTest",null,offer);
+        if(resultat == -1){
+            return false;
+        }
+        else return true;
+
+    }
+    public Cursor getRecherche(){
+        SQLiteDatabase Tp1bd = this.getWritableDatabase();
+        Cursor resultatRecherche = Tp1bd.rawQuery("Select * from offerTest",null);
+        return resultatRecherche;
     }
     //fait une recherche dans la bd pour voir s'il y a au moin une occurence avec le userame entré retourne true si au moin une occurence est trouvé
     public Boolean validationUsername(String username){

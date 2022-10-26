@@ -14,7 +14,7 @@ public class registerActivity extends AppCompatActivity {
 
     EditText username, psw;
     Button loginButton;
-
+    TextView testPost;
     DBHelper Tp1bd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class registerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         //methode permettant d'aller à ls psge d'inscription quand je clique sur le lien
         AllerALaPageInscription();
-
+        AllerAlaPagePostOffer();
         username = (EditText) findViewById(R.id.inputUsernameL);
         psw = (EditText) findViewById(R.id.inputPswL);
         Tp1bd = new DBHelper(this);
@@ -61,6 +61,15 @@ public class registerActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(registerActivity.this,loginActivity.class));
+            }
+        });
+    }
+    private void AllerAlaPagePostOffer() {
+        testPost = findViewById(R.id.testpost);
+        testPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(registerActivity.this,RenplirOffreStage.class));
             }
         });
     }

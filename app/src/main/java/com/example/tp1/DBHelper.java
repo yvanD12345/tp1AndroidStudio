@@ -21,7 +21,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase Tp1bd) {
         Tp1bd.execSQL("create Table users(username TEXT primary key, psw TEXT)");
         //Tp1bd.execSQL("CREATE TABLE IF NOT EXISTS offreEmploi(companyText TEXT primary key,Contact TEXT,Telephone NUMERIC,Courriel VARCHAR(255),ville TEXT,codePostal TEXT)");
-        Tp1bd.execSQL("create Table offerTest(nomCompany Text primary key, email TEXT,contact TEXT)");
+        Tp1bd.execSQL("create Table offerTest(nomCompany Text primary key, email TEXT,contact TEXT,poste TEXT)");
     }
 
     @Override
@@ -44,12 +44,13 @@ public class DBHelper extends SQLiteOpenHelper {
         else return true;
 
     }
-    public boolean insertoffer(String nomCompany , String email, String contact){
+    public boolean insertoffer(String nomCompany , String email, String contact,String poste){
         SQLiteDatabase Tp1bd = this.getWritableDatabase();
         ContentValues offer = new ContentValues();
         offer.put("nomCompany", nomCompany);
         offer.put("email",email);
         offer.put("contact",contact);
+        offer.put("poste",poste);
         long resultat = Tp1bd.insert("offerTest",null,offer);
         if(resultat == -1){
             return false;

@@ -39,11 +39,22 @@
         android:layout_below="@+id/emailCompany"
         android:hint="Contact"
         android:textSize="24dp" />
+
+    <EditText
+
+        android:id="@+id/poste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Contact"
+        android:hint="poste"
+        android:textSize="24dp" />
+
+
     <Button
         android:id="@+id/buttonPosterOffre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Contact"
+        android:layout_below="@+id/poste"
         android:text="poster offre"
         android:layout_marginTop="20dp"/>
 

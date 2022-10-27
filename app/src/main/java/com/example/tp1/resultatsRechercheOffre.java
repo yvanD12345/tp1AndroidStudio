@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class resultatsRechercheOffre extends AppCompatActivity {
     RecyclerView recyclerView;
-    ArrayList<String> companyName, email,contact;
+    ArrayList<String> companyName,poste;
     DBHelper Tp1bd;
     adapter adapt;
     @Override
@@ -21,10 +21,9 @@ public class resultatsRechercheOffre extends AppCompatActivity {
         setContentView(R.layout.activity_resultats_recherche_offre);
         Tp1bd = new DBHelper(this);
         companyName = new ArrayList<>();
-        email = new ArrayList<>();
-        contact = new ArrayList<>();
+        poste = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerview);
-        adapt = new adapter(this,companyName,email,contact);
+        adapt = new adapter(this,companyName,poste);
         recyclerView.setAdapter(adapt);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         afficherResultatRecherche();
@@ -39,8 +38,7 @@ public class resultatsRechercheOffre extends AppCompatActivity {
         else{
             while(resultatRecherche.moveToNext()){
                 companyName.add(resultatRecherche.getString(0));
-                email.add(resultatRecherche.getString(1));
-                contact.add(resultatRecherche.getString(2));
+                poste.add(resultatRecherche.getString(3));
             }
         }
     }

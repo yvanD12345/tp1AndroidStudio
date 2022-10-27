@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class RenplirOffreStage extends AppCompatActivity {
 
-    EditText companyName, email, Contact;
+    EditText companyName, email, Contact, poste;
     Button bouttonPoster;
     DBHelper Tp1bd;
     @Override
@@ -22,6 +22,7 @@ public class RenplirOffreStage extends AppCompatActivity {
         companyName = findViewById(R.id.companyName);
         email = findViewById(R.id.emailCompany);
         Contact =  findViewById(R.id.Contact);
+        poste = findViewById(R.id.poste);
         bouttonPoster = findViewById(R.id.buttonPosterOffre);
         bouttonPoster.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,8 +30,8 @@ public class RenplirOffreStage extends AppCompatActivity {
                 String companyNameEnString = companyName.getText().toString();
                 String emailEnString = email.getText().toString();
                 String contactEnString= Contact.getText().toString();
-
-                Boolean insertionReussi = Tp1bd.insertoffer(companyNameEnString,emailEnString,contactEnString);
+                String nomPosteEnString = poste.getText().toString();
+                Boolean insertionReussi = Tp1bd.insertoffer(companyNameEnString,emailEnString,contactEnString,nomPosteEnString);
                 if(insertionReussi == true){
                     Toast.makeText(RenplirOffreStage.this,"une nouvelle offre de stage a été postulée", Toast.LENGTH_SHORT).show();
                 }

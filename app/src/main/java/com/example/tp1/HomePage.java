@@ -39,14 +39,18 @@ public class HomePage extends AppCompatActivity {
        buttonRechercher.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               startActivity(new Intent(HomePage.this,resultatsRechercheOffre.class));
+               inputRecherche = findViewById(R.id.inputRecherche);
+               String sRecherche = inputRecherche.getText().toString();
+               Intent launchResult = new Intent( HomePage.this,resultatsRechercheOffre.class);
+               launchResult.putExtra("key", sRecherche);
+               startActivity(launchResult);
            }
        });
 
     }
 
     private void afficherTouteLesOffre() {
-        Cursor resultatRecherche = Tp1bd.getRecherche();
+        Cursor resultatRecherche = Tp1bd.getRecherche("all");
         if(resultatRecherche.getCount()== 0){
             Toast.makeText(HomePage.this,"aucune offre trouvé avec l'element recherchée",Toast.LENGTH_SHORT).show();
             return;

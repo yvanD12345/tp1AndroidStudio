@@ -58,9 +58,16 @@ public class DBHelper extends SQLiteOpenHelper {
         else return true;
 
     }
-    public Cursor getRecherche(){
+    public Cursor getRecherche(String recherche){
         SQLiteDatabase Tp1bd = this.getWritableDatabase();
-        Cursor resultatRecherche = Tp1bd.rawQuery("Select * from offerTest",null);
+        Cursor resultatRecherche;
+        if(recherche.equals("all")) {
+             resultatRecherche = Tp1bd.rawQuery("Select * from offerTest", null);
+        }
+        else {
+             resultatRecherche = Tp1bd.rawQuery("Select * from offerTest where nomCompany = recherche", null);
+
+        }
         return resultatRecherche;
     }
     //fait une recherche dans la bd pour voir s'il y a au moin une occurence avec le userame entré retourne true si au moin une occurence est trouvé

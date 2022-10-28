@@ -21,6 +21,13 @@ public class OffreStageListModel {
      this.poste = poste;
      this.telephone = telephone;
  }
+    public OffreStageListModel(String companyName,String poste){
+        this.companyName = companyName;
+
+        this.poste = poste;
+
+    }
+
  public String getCompanyName() {return companyName;}
 
  public String getEmail(){return  email;}

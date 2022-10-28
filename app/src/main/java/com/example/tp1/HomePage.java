@@ -20,6 +20,7 @@ public class HomePage extends AppCompatActivity {
    TextView buttonRechercher;
     RecyclerView recyclerView;
     ArrayList<String> companyName,poste;
+    ArrayList<OffreStageListModel> listOffre;
 
     adapter adapt;
     @Override
@@ -29,10 +30,11 @@ public class HomePage extends AppCompatActivity {
         inputRecherche = findViewById(R.id.inputRecherche);
        buttonRechercher = findViewById(R.id.researchButton);
         Tp1bd = new DBHelper(this);
-        companyName = new ArrayList<>();
-        poste = new ArrayList<>();
+       /* companyName = new ArrayList<>();
+        poste = new ArrayList<>();*/
+         listOffre  = new ArrayList<OffreStageListModel>();
         recyclerView = findViewById(R.id.recyclerview);
-        adapt = new adapter(this,companyName,poste);
+        adapt = new adapter(this,/*companyName,poste*/listOffre);
         recyclerView.setAdapter(adapt);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         afficherTouteLesOffre();
@@ -57,8 +59,7 @@ public class HomePage extends AppCompatActivity {
         }
         else{
             while(resultatRecherche.moveToNext()){
-                companyName.add(resultatRecherche.getString(0));
-                poste.add(resultatRecherche.getString(3));
+                listOffre.add(new OffreStageListModel(resultatRecherche.getString(0),resultatRecherche.getString(3)));
             }
         }
     }

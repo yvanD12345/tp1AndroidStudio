@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class resultatsRechercheOffre extends AppCompatActivity {
     RecyclerView recyclerView;
     ArrayList<String> companyName,poste;
+    ArrayList<OffreStageListModel> listOffreTrouve = new ArrayList<OffreStageListModel>();
     DBHelper Tp1bd;
     adapter adapt;
 
@@ -25,7 +26,8 @@ public class resultatsRechercheOffre extends AppCompatActivity {
         companyName = new ArrayList<>();
         poste = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerview);
-        adapt = new adapter(this,companyName,poste);
+
+        adapt = new adapter(this,listOffreTrouve);
         recyclerView.setAdapter(adapt);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -47,8 +49,8 @@ public class resultatsRechercheOffre extends AppCompatActivity {
             }
             else{
                 while(resultatRecherche.moveToNext()){
-                    companyName.add(resultatRecherche.getString(0));
-                    poste.add(resultatRecherche.getString(3));
+                    listOffreTrouve.add(new OffreStageListModel(resultatRecherche.getString(0),resultatRecherche.getString(3)));
+
                 }
             }
         }

@@ -65,7 +65,7 @@ public class DBHelper extends SQLiteOpenHelper {
              resultatRecherche = Tp1bd.rawQuery("Select * from offerTest", null);
         }
         else {
-             resultatRecherche = Tp1bd.rawQuery("Select * from offerTest where nomCompany = recherche", null);
+             resultatRecherche = Tp1bd.rawQuery("Select * from offerTest where nomCompany = ?", new String[]{recherche});
 
         }
         return resultatRecherche;

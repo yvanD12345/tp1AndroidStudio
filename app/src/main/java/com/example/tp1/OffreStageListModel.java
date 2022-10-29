@@ -9,9 +9,10 @@ public class OffreStageListModel {
  private String ville;
  private String codePostal;
  private int telephone;
+ private String url;
 
 
- public OffreStageListModel(String companyName, String email,String contact,int telephone, String codePostal, String adresse,String ville,String poste){
+ public OffreStageListModel(String companyName, String email,String contact,int telephone, String codePostal, String adresse,String ville,String poste,String url){
      this.companyName = companyName;
      this.email = email;
      this.contact = contact;
@@ -20,6 +21,7 @@ public class OffreStageListModel {
      this.adresse = adresse;
      this.poste = poste;
      this.telephone = telephone;
+     this.url = url;
  }
     public OffreStageListModel(String companyName,String poste){
         this.companyName = companyName;

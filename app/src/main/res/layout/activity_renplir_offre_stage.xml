@@ -63,8 +63,9 @@
         android:id="@+id/buttonPosterOffre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ville"
+        android:layout_below="@+id/url"
         android:text="poster offre"
+
         android:layout_marginTop="20dp"/>
 
     <EditText
@@ -78,12 +79,13 @@
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/adresse"
+        android:id="@+id/numeroRue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextPhone"
         android:ems="10"
-        android:hint="adresse"
+        android:hint="numero de rue"
+        android:inputType="phone"
         android:textSize="24dp"
    
         />
@@ -92,9 +94,29 @@
         android:id="@+id/ville"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/adresse"
+        android:layout_below="@+id/numeroRue"
         android:ems="10"
         android:hint="ville"
+        android:textSize="24dp"
+
+        />
+    <EditText
+        android:id="@+id/nomRue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ville"
+        android:ems="10"
+        android:hint="nom de rue"
+        android:textSize="24dp"
+
+        />
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomRue"
+        android:ems="10"
+        android:hint="url"
         android:textSize="24dp"
 
         />

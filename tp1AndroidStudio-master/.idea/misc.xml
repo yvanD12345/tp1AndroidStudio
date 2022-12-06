@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/drawable-anydpi/ic_searchH.xml" value="0.2485" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/drawable/button_bigger.xml" value="0.2465" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/drawable/ic_email.xml" value="0.2475" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/drawable/ic_person.xml" value="0.2475" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/drawable/ic_search.xml" value="0.2485" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/drawable/ic_searchdata.xml" value="0.2485" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/drawable/ic_security.xml" value="0.2475" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/drawable/input_bigger.xml" value="0.2465" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout-land/activity_home_page.xml" value="0.5197916666666667" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout-land/activity_login.xml" value="0.2765625" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout-land/activity_register.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout/activity_home_page.xml" value="0.256640625" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout/activity_main.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout/activity_register.xml" value="0.3828571428571429" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout/activity_renplir_offre_stage.xml" value="0.3828571428571429" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout/activity_resultats_recherche_offre.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/4ta/AndroidStudioProjects/tp1/app/src/main/res/layout/userentry.xml" value="0.42857142857142855" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/4ta/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout-land/activity_home_page.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/4ta/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
+        <entry key="..\:/Users/4ta/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/activity_renplir_offre_stage.xml" value="0.35127478753541075" />
+        <entry key="..\:/Users/4ta/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/activity_resultats_recherche_offre.xml" value="0.24427083333333333" />
+        <entry key="..\:/Users/4ta/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/userentry.xml" value="0.446875" />
+=======
+>>>>>>> 17966acf3c8c1dbb31a899969b8ee457134e2667
+        <entry key="..\:/Users/ivan2003/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/activity_home_page.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/ivan2003/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/activity_maps.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/ivan2003/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ivan2003/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/activity_renplir_offre_stage.xml" value="0.4" />
+        <entry key="..\:/Users/ivan2003/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/activity_resultats_recherche_offre.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/ivan2003/Documents/GitHub/tp1AndroidStudio/app/src/main/res/layout/userentry.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

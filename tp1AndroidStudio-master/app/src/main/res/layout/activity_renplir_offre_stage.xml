@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RenplirOffreStage"
+    android:background="@drawable/background"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/creationoffre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Poster une offre"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creationoffre"
+        android:hint="name"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/emailCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:hint="email"
+        android:layout_below="@+id/companyName"/>
+
+    <EditText
+
+        android:id="@+id/Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailCompany"
+        android:hint="Contact"
+        android:textSize="24dp" />
+
+    <EditText
+
+        android:id="@+id/poste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Contact"
+        android:hint="poste"
+        android:textSize="24dp" />
+
+    <EditText
+
+        android:id="@+id/postalCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poste"
+        android:hint="postal code"
+        android:textSize="24dp" />
+
+
+    <Button
+        android:id="@+id/buttonPosterOffre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/url"
+        android:text="poster offre"
+
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postalCode"
+        android:ems="10"
+        android:textSize="24dp"
+        android:hint="phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/numeroRue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPhone"
+        android:ems="10"
+        android:hint="numero de rue"
+        android:inputType="phone"
+        android:textSize="24dp"
+   
+        />
+
+    <EditText
+        android:id="@+id/ville"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numeroRue"
+        android:ems="10"
+        android:hint="ville"
+        android:textSize="24dp"
+
+        />
+    <EditText
+        android:id="@+id/nomRue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ville"
+        android:ems="10"
+        android:hint="nom de rue"
+        android:textSize="24dp"
+
+        />
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomRue"
+        android:ems="10"
+        android:hint="url"
+        android:textSize="24dp"
+
+        />
+
+</RelativeLayout>

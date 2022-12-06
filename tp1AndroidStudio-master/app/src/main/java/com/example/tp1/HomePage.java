@@ -74,7 +74,7 @@ public class HomePage extends AppCompatActivity {
        mapButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Intent showmap = new Intent(HomePage.this,MapsActivity2.class);
+               Intent showmap = new Intent(HomePage.this,MapsActivity.class);
                startActivity(showmap);
            }
        });

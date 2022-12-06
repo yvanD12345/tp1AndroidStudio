@@ -5,5 +5,4 @@
     <string name="text">text</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="google_map_api_key">AIzaSyAJoNr4pyqeb5Rn8LPshm7KonxVIkBfwk0</string>
-    <string name="title_activity_maps2">MapsActivity2</string>
 </resources>
